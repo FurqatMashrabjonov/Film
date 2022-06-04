@@ -1,0 +1,3 @@
+<div>
+    {{$films->count()}}
+</div>
