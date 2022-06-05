@@ -4,7 +4,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="title mb-30">
-                        <h2>Create Film</h2>
+                        <h2>Create Film {{count($films)}}</h2>
                     </div>
                 </div>
             </div>
