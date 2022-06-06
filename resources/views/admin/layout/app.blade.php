@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/lineicons.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/materialdesignicons.min.css')}}" />
-{{--    <link rel="stylesheet" href="assets/css/fullcalendar.css" />--}}
-{{--    <link rel="stylesheet" href="assets/css/fullcalendar.css" />--}}
+    <link rel="stylesheet" href="{{asset('css/app.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/main.css')}}" />
+    @yield('css')
     @livewireStyles
 </head>
 <body>
@@ -526,6 +526,8 @@
 
 <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
+<script src="{{asset('js/app.js')}}"></script>
+@yield('script')
 @livewireScripts
 </body>
 </html>
