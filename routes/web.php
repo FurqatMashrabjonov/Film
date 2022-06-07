@@ -41,5 +41,5 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], f
         Route::get('/', ListVideo::class)->name('list');
         Route::get('/create', Create::class)->name('create');
     });
-
+//changed
 });
