@@ -21,3 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/upload', function (Request $request){
     return response()->json(['name' => $request->file('video')->getClientOriginalExtension()]);
 });
+
+Route::any('/github', function(Request $request){
+   \Illuminate\Support\Facades\Log::debug(json_encode($request->all()));
+});
