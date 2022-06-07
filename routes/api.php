@@ -24,4 +24,5 @@ Route::post('/upload', function (Request $request){
 
 Route::any('/github', function(Request $request){
    \Illuminate\Support\Facades\Log::debug(json_encode($request->all()));
+   return response()->json(['success' => true]);
 });
