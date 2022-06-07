@@ -42,4 +42,5 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], f
         Route::get('/create', Create::class)->name('create');
     });
 //changed
+    //changed 2
 });
